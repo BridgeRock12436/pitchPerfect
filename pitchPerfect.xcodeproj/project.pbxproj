@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE79FD2D1AE16C6F00AAB89B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE79FD2C1AE16C6F00AAB89B /* AppDelegate.swift */; };
-		EE79FD2F1AE16C6F00AAB89B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE79FD2E1AE16C6F00AAB89B /* ViewController.swift */; };
+		EE4109021AE194F700E3B2F9 /* playRecordedSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4109011AE194F700E3B2F9 /* playRecordedSoundViewController.swift */; };
+		EE79FD2D1AE16C6F00AAB89B /* appDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE79FD2C1AE16C6F00AAB89B /* appDelegate.swift */; };
+		EE79FD2F1AE16C6F00AAB89B /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE79FD2E1AE16C6F00AAB89B /* RecordSoundsViewController.swift */; };
 		EE79FD321AE16C6F00AAB89B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE79FD301AE16C6F00AAB89B /* Main.storyboard */; };
 		EE79FD341AE16C6F00AAB89B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE79FD331AE16C6F00AAB89B /* Images.xcassets */; };
 		EE79FD371AE16C6F00AAB89B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE79FD351AE16C6F00AAB89B /* LaunchScreen.xib */; };
 		EE79FD431AE16C6F00AAB89B /* pitchPerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE79FD421AE16C6F00AAB89B /* pitchPerfectTests.swift */; };
+		EE79FD4D1AE16E2000AAB89B /* microphone~iphone.pdf in Resources */ = {isa = PBXBuildFile; fileRef = EE79FD4C1AE16E2000AAB89B /* microphone~iphone.pdf */; };
+		EE8C77781AE68BBF006A22C2 /* audioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8C77771AE68BBF006A22C2 /* audioPlayer.swift */; };
+		EEED33781AE5746900656DD3 /* recordAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEED33771AE5746900656DD3 /* recordAudio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +30,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE0B684F1AE92672009D4FCB /* warn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = warn.h; sourceTree = "<group>"; };
+		EE4109011AE194F700E3B2F9 /* playRecordedSoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playRecordedSoundViewController.swift; sourceTree = "<group>"; };
 		EE79FD271AE16C6F00AAB89B /* pitchPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pitchPerfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE79FD2B1AE16C6F00AAB89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE79FD2C1AE16C6F00AAB89B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE79FD2E1AE16C6F00AAB89B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE79FD2C1AE16C6F00AAB89B /* appDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appDelegate.swift; sourceTree = "<group>"; };
+		EE79FD2E1AE16C6F00AAB89B /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
 		EE79FD311AE16C6F00AAB89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE79FD331AE16C6F00AAB89B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EE79FD361AE16C6F00AAB89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EE79FD3C1AE16C6F00AAB89B /* pitchPerfectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pitchPerfectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE79FD411AE16C6F00AAB89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE79FD421AE16C6F00AAB89B /* pitchPerfectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pitchPerfectTests.swift; sourceTree = "<group>"; };
+		EE79FD4C1AE16E2000AAB89B /* microphone~iphone.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "microphone~iphone.pdf"; sourceTree = "<group>"; };
+		EE8C77771AE68BBF006A22C2 /* audioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = audioPlayer.swift; sourceTree = "<group>"; };
+		EEED33771AE5746900656DD3 /* recordAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recordAudio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +68,7 @@
 		EE79FD1E1AE16C6F00AAB89B = {
 			isa = PBXGroup;
 			children = (
+				EE0B684F1AE92672009D4FCB /* warn.h */,
 				EE79FD291AE16C6F00AAB89B /* pitchPerfect */,
 				EE79FD3F1AE16C6F00AAB89B /* pitchPerfectTests */,
 				EE79FD281AE16C6F00AAB89B /* Products */,
@@ -77,12 +87,16 @@
 		EE79FD291AE16C6F00AAB89B /* pitchPerfect */ = {
 			isa = PBXGroup;
 			children = (
-				EE79FD2C1AE16C6F00AAB89B /* AppDelegate.swift */,
-				EE79FD2E1AE16C6F00AAB89B /* ViewController.swift */,
+				EE8C77771AE68BBF006A22C2 /* audioPlayer.swift */,
+				EE79FD2E1AE16C6F00AAB89B /* RecordSoundsViewController.swift */,
+				EE79FD2C1AE16C6F00AAB89B /* appDelegate.swift */,
 				EE79FD301AE16C6F00AAB89B /* Main.storyboard */,
+				EE79FD4C1AE16E2000AAB89B /* microphone~iphone.pdf */,
 				EE79FD331AE16C6F00AAB89B /* Images.xcassets */,
 				EE79FD351AE16C6F00AAB89B /* LaunchScreen.xib */,
 				EE79FD2A1AE16C6F00AAB89B /* Supporting Files */,
+				EE4109011AE194F700E3B2F9 /* playRecordedSoundViewController.swift */,
+				EEED33771AE5746900656DD3 /* recordAudio.swift */,
 			);
 			path = pitchPerfect;
 			sourceTree = "<group>";
@@ -194,6 +208,7 @@
 			files = (
 				EE79FD321AE16C6F00AAB89B /* Main.storyboard in Resources */,
 				EE79FD371AE16C6F00AAB89B /* LaunchScreen.xib in Resources */,
+				EE79FD4D1AE16E2000AAB89B /* microphone~iphone.pdf in Resources */,
 				EE79FD341AE16C6F00AAB89B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +227,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE79FD2F1AE16C6F00AAB89B /* ViewController.swift in Sources */,
-				EE79FD2D1AE16C6F00AAB89B /* AppDelegate.swift in Sources */,
+				EE79FD2F1AE16C6F00AAB89B /* RecordSoundsViewController.swift in Sources */,
+				EEED33781AE5746900656DD3 /* recordAudio.swift in Sources */,
+				EE8C77781AE68BBF006A22C2 /* audioPlayer.swift in Sources */,
+				EE4109021AE194F700E3B2F9 /* playRecordedSoundViewController.swift in Sources */,
+				EE79FD2D1AE16C6F00AAB89B /* appDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +429,7 @@
 				EE79FD481AE16C6F00AAB89B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE79FD491AE16C6F00AAB89B /* Build configuration list for PBXNativeTarget "pitchPerfectTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +438,7 @@
 				EE79FD4B1AE16C6F00AAB89B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
