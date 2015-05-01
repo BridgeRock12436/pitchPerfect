@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8xU-gb-QEu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Recording-->
@@ -16,13 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Recording" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNG-1P-TqM" userLabel="RecordingLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Recording" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNG-1P-TqM" userLabel="RecordingLabel">
                                 <rect key="frame" x="265" y="410" width="79" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vek-xZ-o4G" userLabel="stopButton">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vek-xZ-o4G" userLabel="stopButton">
                                 <rect key="frame" x="269" y="465" width="50" height="50"/>
                                 <state key="normal" image="stop">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,7 +32,7 @@
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Plq-3K-x3m"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWo-Tb-Esx" userLabel="microphoneButton">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWo-Tb-Esx" userLabel="microphoneButton">
                                 <rect key="frame" x="244" y="219" width="100" height="100"/>
                                 <state key="normal" image="microphone-1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -44,7 +45,10 @@
                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="eWo-Tb-Esx" secondAttribute="centerX" id="4N9-6B-5YG"/>
+                            <constraint firstItem="CNG-1P-TqM" firstAttribute="top" secondItem="eWo-Tb-Esx" secondAttribute="bottom" constant="91" id="C2k-qz-srI"/>
                             <constraint firstAttribute="centerX" secondItem="CNG-1P-TqM" secondAttribute="centerX" id="b2Q-hC-Fe7"/>
+                            <constraint firstItem="eWo-Tb-Esx" firstAttribute="top" secondItem="U4p-QO-KdR" secondAttribute="bottom" constant="155" id="fXB-4z-Ymk"/>
+                            <constraint firstItem="vek-xZ-o4G" firstAttribute="top" secondItem="CNG-1P-TqM" secondAttribute="bottom" constant="34" id="gLU-0w-L7a"/>
                             <constraint firstAttribute="centerX" secondItem="vek-xZ-o4G" secondAttribute="centerX" id="sfJ-qx-g8e"/>
                         </constraints>
                     </view>
@@ -74,7 +78,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAm-iC-83z">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAm-iC-83z">
                                 <rect key="frame" x="43" y="84" width="100" height="100"/>
                                 <state key="normal" image="slow">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -83,7 +87,7 @@
                                     <action selector="playSlowSound:" destination="qEx-7Y-wJC" eventType="touchUpInside" id="Wxd-Vv-3yE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhc-6X-2e7">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhc-6X-2e7">
                                 <rect key="frame" x="155" y="390" width="100" height="100"/>
                                 <state key="normal" image="darthvader">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -92,7 +96,7 @@
                                     <action selector="playDarkVaderAudio:" destination="qEx-7Y-wJC" eventType="touchUpInside" id="tbN-di-Fbk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v90-d4-Tna">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v90-d4-Tna">
                                 <rect key="frame" x="172" y="84" width="97" height="100"/>
                                 <state key="normal" image="fast">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -101,8 +105,8 @@
                                     <action selector="playFastSound:" destination="qEx-7Y-wJC" eventType="touchUpInside" id="9Zg-x6-3PD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQs-zP-mV3">
-                                <rect key="frame" x="112" y="507" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQs-zP-mV3">
+                                <rect key="frame" x="112" y="507" width="50" height="54"/>
                                 <state key="normal" image="stop">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -110,7 +114,7 @@
                                     <action selector="stopAudio:" destination="qEx-7Y-wJC" eventType="touchUpInside" id="eFX-kR-cTC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obw-N0-GCX">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obw-N0-GCX">
                                 <rect key="frame" x="24" y="390" width="100" height="100"/>
                                 <state key="normal" image="chipmunk">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -121,6 +125,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v90-d4-Tna" firstAttribute="leading" secondItem="IAm-iC-83z" secondAttribute="trailing" constant="75" id="9OA-vS-jmc"/>
+                            <constraint firstItem="LjH-7O-Zrd" firstAttribute="top" secondItem="VQs-zP-mV3" secondAttribute="bottom" constant="20" id="Dcp-t4-PiA"/>
+                            <constraint firstItem="Fhc-6X-2e7" firstAttribute="centerY" secondItem="Obw-N0-GCX" secondAttribute="centerY" id="K4v-nb-sxX"/>
+                            <constraint firstItem="Obw-N0-GCX" firstAttribute="centerX" secondItem="IAm-iC-83z" secondAttribute="centerX" id="Ulg-3W-Dqq"/>
+                            <constraint firstItem="IAm-iC-83z" firstAttribute="top" secondItem="Wcf-gj-SGd" secondAttribute="bottom" constant="30" id="Xb9-eN-90e"/>
+                            <constraint firstItem="IAm-iC-83z" firstAttribute="leading" secondItem="Rsw-T8-ol1" secondAttribute="leadingMargin" constant="50" id="bYO-m1-Prn"/>
+                            <constraint firstItem="Fhc-6X-2e7" firstAttribute="centerX" secondItem="v90-d4-Tna" secondAttribute="centerX" id="oqS-RA-iBa"/>
+                            <constraint firstAttribute="centerX" secondItem="VQs-zP-mV3" secondAttribute="centerX" id="xMz-Iu-GCj"/>
+                            <constraint firstItem="v90-d4-Tna" firstAttribute="centerY" secondItem="IAm-iC-83z" secondAttribute="centerY" id="xuX-12-Trc"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="y0o-LO-OQD"/>
                 </viewController>
